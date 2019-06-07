@@ -3,7 +3,7 @@
 
 
 
-const contraseña = document.getElementById('contraseña');
+
 const go1 = document.getElementById('go1');
 let texto = document.getElementById('texto');
 let codigo = document.getElementById('codigo');
@@ -13,15 +13,14 @@ const go = document.getElementById('go2');
 let resultado = document.getElementById('reultado');
 const volver = document.getElementById('volver');
 const salir = document.getElementById('salir');
-const clave = "laboratoria".toUpperCase();
-console.log(clave);
 
 
+const contraseña = document.getElementById('contraseña');
 go1.addEventListener("click", () => {
 	const pass = contraseña.value;
 
-	if (pass == clave) {
-		alert("HERE IS");
+	if (pass === "LABORATORIA") {
+		alert("Bienvenida");
 	} else {
 		alert("intenta de nuevo");
 	}

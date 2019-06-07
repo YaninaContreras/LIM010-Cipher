@@ -1,13 +1,24 @@
 /* Acá van tus reglas de estilo */
 header{
-    font-size: 27px;
-    color: rgb(255, 208, 0);
+    
     text-align: center;
 
 
 }
-.img1 {
-    width: 480px;
-    height: 400px;
-    text-align: center
+.salad {
+    width: 8px;
+    height: 1px;
+    align-self: center;
+}
+
+.contraseña{
+
+    font-size: 20px;
+    align-self: center;
+}
+
+.go1{
+    font-size: 20px;
+    align-self: center;
+
 }
