@@ -3,7 +3,6 @@ El ingrediente secreto de la tía Marta
 <!-- resumen de qe trata mi proyecto -->
 El proyecto tiene como fin brindar el ingrediente secreto que toda comida tiene, sin que tenga que caer en manos equivocadas el cual solo será compartido en la cocina específica. 
 <!-- imagen final del proyecto -->
-![imagen](https://github-production-user-asset-6210df.s3.amazonaws.com/51222789/58820010-0f341a80-85f7-11e9-9244-a37612a51ef4.png)
 
 <!-- Investigación UX: -->
 <!-- quienes son los usuarios -->

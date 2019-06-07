@@ -14,20 +14,20 @@ let resultado = document.getElementById('reultado');
 const volver = document.getElementById('volver');
 const salir = document.getElementById('salir');
 const clave = "laboratoria".toUpperCase();
-console.log (clave);
+console.log(clave);
 
 
-go1.addEventListener("click",() => {
+go1.addEventListener("click", () => {
 	const pass = contraseña.value;
-	
-	if (pass == clave) {  
+
+	if (pass == clave) {
 		alert("HERE IS");
 	} else {
 		alert("intenta de nuevo");
 	}
 });
-  screen2.style.display = 'none';
-  screen3.style.display = 'none';
+screen2.style.display = 'none';
+screen3.style.display = 'none';
 
 
 
