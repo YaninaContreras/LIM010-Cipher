@@ -16,17 +16,29 @@ const salir = document.getElementById('salir');
 
 
 const contraseña = document.getElementById('contraseña');
+
 go1.addEventListener("click", () => {
 	const pass = contraseña.value;
+	
 
 	if (pass === "LABORATORIA") {
 		alert("Bienvenida");
-	} else {
-		alert("intenta de nuevo");
+	} 
+	else if (contador > 1) {
+		
+	    error.innerHTML="acceso denegado";
+	}
+	else {
+		error.innerHTML="intenta de nuevo";
+        contador++;
 	}
 });
+
+
+
 screen2.style.display = 'none';
 screen3.style.display = 'none';
+
 
 
 

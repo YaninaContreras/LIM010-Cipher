@@ -1,24 +1,41 @@
 /* Acá van tus reglas de estilo */
-header{
-    
-    text-align: center;
 
 
+body{
+    text-align: center
 }
-.salad {
-    width: 8px;
-    height: 1px;
-    align-self: center;
-}
-
 .contraseña{
-
-    font-size: 20px;
+    width: 37%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 18px;
     align-self: center;
+    background-color: rgb(147, 165, 42)
 }
 
 .go1{
     font-size: 20px;
     align-self: center;
-
 }
+
+.screen0{
+    
+    color: rgb(43, 168, 226);
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 10px;
+    padding: 5px;
+    text-align: initial
+}
+.screen1{
+    width: 80%;
+    color: blueviolet;
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 100px;
+}
+footer{
+    text-align: center
+}
+
