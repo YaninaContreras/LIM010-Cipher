@@ -12,16 +12,16 @@ go1.addEventListener("click", () => {
 	const error = document.getElementById("error");
 
 	if (pass === "LABORATORIA") {
-		screen2.style.display = 'block';
-		screen1.style.display = 'none';
-	} 
+		screen2.classList.remove("hide");
+		screen1.classList.add("hide");
+	}
 	else if (contador > 1) {
-		
-	    error.innerHTML="ACCESO DENEGADO";
+
+		error.innerHTML = "ACCESO DENEGADO";
 	}
 	else {
-		error.innerHTML="INTENTA DE NUEVO";
-        contador++;
+		error.innerHTML = "INTENTA DE NUEVO";
+		contador++;
 	}
 });
 
@@ -32,25 +32,48 @@ let codigo = document.getElementById('codigo');
 const cifrar = document.getElementById('cifrar');
 const descifrar = document.getElementById('descifrar');
 
-cifrar.addEventListener("click", () =>{
-let text = texto.value.toUpperCase();
-let code = parseInt(codigo.value);
-let cipherjs = cipher.encode(text,code);
-resultado.value = cipherjs;
-
-screen1.style.display = 'none';
-screen2.style.display = 'none';
-screen3.style.display = 'block';
-});
-
 /*RESULTADO*/
 let resultado = document.getElementById('resultado');
+
+cifrar.addEventListener("click", () => {
+	let text = texto.value.toUpperCase();
+	let code = parseInt(codigo.value);
+	let cipherjs = window.cipher.encode(code, text);
+
+	screen1.classList.add("hide");
+	screen2.classList.add("hide");
+	screen3.classList.remove("hide");
+
+	resultado.value = cipherjs;
+});
+
+descifrar.addEventListener("click", () => {
+	let text = texto.value.toUpperCase();
+	let code = parseInt(codigo.value);
+	let cipherjs = window.cipher.decode(code, text);
+
+	screen1.classList.add("hide");
+	screen2.classList.add("hide");
+	screen3.classList.remove("hide");
+	resultado.value = cipherjs;
+})
+/*BOTONES PARA REGRESAR O SALIR*/
 const volver = document.getElementById('volver');
+volver.addEventListener("click", () => {
+
+	screen1.classList.add("hide");
+	screen2.classList.remove("hide");
+	screen3.classList.add("hide");
+
+})
 const salir = document.getElementById('salir');
+salir.addEventListener("click"), () => {
 
+	screen1.classList.remove("hide");
+	screen2.classList.add("hide");
+	screen3.classList.add("hide");
+};
 
-screen2.style.display = 'none';
-screen3.style.display = 'none';
 
 
 

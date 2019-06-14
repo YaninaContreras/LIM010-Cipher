@@ -15,13 +15,15 @@ window.cipher = {
 
   decode: (offset, string) => {
     /* Acá va tu código que descifra*/
-    let solved2 = "";
+    let solved = "";
 
     for (let i=0 ; i<string.length; i++){
-    const numero2 = string[i].charCodeAt();
-    let formula2 = ((numero-65)+ offset) % 26 + 65
-    let letra2 = String.fromCharCode(formula)
-    solved2 += letra
+      const numero = string[i].charCodeAt();
+      let formula = 90-((90-numero)+ offset) % 26
+      let letra = String.fromCharCode(formula)
+      solved += letra
+      }
+  return solved;
+}
 
-  }
 };
