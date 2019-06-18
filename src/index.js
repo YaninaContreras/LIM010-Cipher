@@ -2,6 +2,9 @@
 /*llamando los inputs*/
 
 const go1 = document.getElementById('go1');
+const screen1 =document.getElementById("screen1")
+const screen2 =document.getElementById("screen2")
+const screen3 =document.getElementById("screen3")
 
 /*condicional y contador*/
 let contador = 0;
@@ -63,16 +66,21 @@ volver.addEventListener("click", () => {
 
 	screen1.classList.add("hide");
 	screen2.classList.remove("hide");
+
 	screen3.classList.add("hide");
 
 })
 const salir = document.getElementById('salir');
-salir.addEventListener("click"), () => {
+salir.addEventListener("click", () => {
 
 	screen1.classList.remove("hide");
 	screen2.classList.add("hide");
 	screen3.classList.add("hide");
-};
+
+	document.getElementById("contraseña").value=""
+
+
+});
 
 
 
