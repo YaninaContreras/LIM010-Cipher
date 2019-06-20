@@ -1,62 +1,103 @@
 /* Acá van tus reglas de estilo */
 
-
 body{
     text-align: center;
-    max-width: 1500px;
+    max-width: 2000px;
     box-sizing: border-box;
+    background-image: url("fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-header {
-    width: 1500px;
-    height: 210px;
-    margin-right: 1000px;
+.titulo{
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 200px;
+}
+main{
+    flex: 1;
+}
+.ingreso{
+
+    font-family: Arial black, helvetica, sans-serif;
 }
 
-.hide {
-display: none;
-
+p{
+    font-family: Arial black, helvetica, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 16px;
 }
 
-.img1{
-    width: 450px;
-    margin-left: 267px;
- }
+.codigo{
+    border-radius: 5px;
+    width: 190px;
+    height: 25px;
+    background-color: rgb(214, 240, 69);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
 .contraseña{
-    width: 30%;
-    padding: 12px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    align-self: center;
-    background-color: rgb(6, 50, 133);
+    border-radius: 5px;
+    width: 190px;
+    height: 25px;
+    background-color: rgb(214, 240, 69);
+    font-family: Georgia, 'Times New Roman', Times, serif
+    }
+.error{
+    color: brown;
 }
-
 .rocoto{
-    align-self: flex-start;
-    float: left;
-    width: 330px;
-    height: 280px;
+    width: 300px;
+    height: 250px;
+    padding: .5em;
 }
 .pollo{
-    align-self: flex-start;
-    float: right;
-    width: 350px;
-    height: 240px;
+    
+    width: 300px;
+    height: 190px;
 }
-.go1{
-    font-size: 20px;
-    align-self: center;
+.causa{
+    width: 300px;
+    height: 190px;
 }
-.screen1{
-    width: 80%;
-    color: blueviolet;
-    font-family: Arial, helvetica, sans-serif;
-    font-size: 18px;
-    text-align: center;
-    padding: 100px;
+.huancahina{
+    width: 300px;
+    height: 190px;
+}
+textarea{
+    width: 280px;
+    height: 120px;
+    background-color: rgb(214, 240, 69);
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+}
+.screen2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
-    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(14, 6, 12);
+    font-weight: bold;
 }
+
+
+.hide {
+    display: none;
+}  
 

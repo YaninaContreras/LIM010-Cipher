@@ -17,7 +17,7 @@
       <img src="salad.jpg" class="img1">
       <form action="" class="ingreso">
         <input type="password" id="contraseña" class="contraseña" placeholder="Escribe tu contraseña">
-        <input type="button" value="GO " class="go1" id="go1">
+        <input type="button" value="IR " class="go1" id="go1">
         <br>
         <p>INGRESAR CONTRASEÑA</p>
         <h1 id="error" class="error"></h1>
@@ -25,33 +25,37 @@
 
     </section>
 
-    <section id="screen2" class="hide">
-
-      <p>INGRESA TU TEXTO</p><br>
-      <input type="" name="texto" id="texto" placeholder="TU TEXTO AQUI"><br>
+    <section id="screen2" class="hide screen2">
       <img src="rocoto-relleno.jpg" class="rocoto">
-      <p>INGRESA TU CODIGO DE MOVIMIENTO</p><br>
+      <div id="div">
+        <p>INGRESA TU TEXTO</p><br>
+        <textarea name="texto" id="texto" placeholder="Escribe tu texto aqui"></textarea><br>
+        <p>INGRESA TU CODIGO DE MOVIMIENTO</p><br>
+        <input type="number" name="codigo" id="codigo" class="codigo" placeholder="Escribe tu codigo"> <br>
+        <p> ESCOGE TU OPCION </p><br>
+        <button id="cifrar" class="cifrar"> CIFRAR </button>
+        <button id="descifrar" class="descifrar"> DESCIFRAR </button><br>
+      </div>
       <img src="pollo.jpg" class="pollo">
-      <input type="" name="codigo" id="codigo" placeholder="Escribe tu codigo"> <br>
-      <p> ESCOGE TU OPCION </p><br>
-      <button id="cifrar" class="cifrar"> CIFRAR </button>
-      <button id="descifrar" class="descifrar"> DESCIFRAR </button><br>
-
     </section>
 
-    <section id="screen3" class="hide">
-
+    <section id="screen3" class="hide screen3">
+      <img src="causa.png" class="causa">
+      <div>
       <p>!AQUI VA! </p><br>
+      <textarea name="texto" id="resultado" id="resultado"></textarea><br>
 
-        <input type="text" name="resultado" id="resultado"><br>
-        <button id="volver" class="volver"> VOLVER </button>
-        <button id="salir" class="salir"> SALIR </button>
-      
+      <button id="volver" class="volver"> VOLVER </button>
+      <button id="salir" class="salir"> SALIR </button>
+    </div>
+      <img src="huancahina.png" class="huancahina">
     </section>
 
   </main>
 
-  <footer> Todos los derechos reservados por Yanina Contreras.</footer>
+  <footer>
+    <P>Todos los derechos reservados por Yanina Contreras 2019</P>
+  </footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
